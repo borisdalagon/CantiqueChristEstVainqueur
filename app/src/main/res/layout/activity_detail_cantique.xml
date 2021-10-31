@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailCantique"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="0dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--Titre et numero-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_margin="16dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/numero_detail_cantique"
+                        android:text="1"
+                        android:fontFamily="@font/alegreya_sans_light"
+                        android:textSize="20dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"/>
+
+
+                    <View android:layout_height="1dp"
+                          android:layout_width="3dp"
+                         android:layout_marginTop="2dp"
+                          android:background="@color/colorPrimary"
+                          android:layout_marginLeft="6dp"
+                          android:layout_marginRight="6dp"/>
+
+
+                    <TextView
+                        android:id="@+id/titre_detail_cantique"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:text="Titre du cantique"
+                        android:textColor="@color/colorNoir"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <!--Contenu du chant-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <!--Refrain Top-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/choeur"
+                        android:visibility="gone"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Choeur :"
+                            android:fontFamily="sans-serif"                            android:textColor="@color/colorNoir"
+                            android:textStyle="italic"
+                            android:textSize="@dimen/dim_text"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/refrain_top"
+                            android:text=""
+                            android:fontFamily="sans-serif"                            android:textSize="@dimen/dim_text"
+                            android:textStyle="bold|italic"
+                            android:textColor="@color/colorNoir" />
+
+
+                    </LinearLayout>
+
+                    <!--Couplet 1-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/num_couplet1"
+                            android:text=""
+                            android:fontFamily="sans-serif"                            android:textSize="18dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="bold"/>
+
+                        <View
+                            android:layout_width="6dp"
+                            android:layout_height="2dp"
+                            android:background="@color/colorBlanche"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/couplet1"
+                            android:text=""
+                            android:fontFamily="sans-serif"                            android:textSize="@dimen/dim_text"
+                            android:textColor="@color/colorNoir" />
+
+
+                    </LinearLayout>
+
+                    <!--Refrain 1-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/choeur1"
+                        android:visibility="gone"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginLeft="40dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Choeur :"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="sans-serif"
+                            android:textColor="@color/colorNoir"
+                            android:textStyle="italic"
+                            android:textSize="@dimen/dim_text"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/refrain1"
+                            android:text=""
+                            android:fontFamily="sans-serif"
+                            android:textSize="@dimen/dim_text"
+                            android:textStyle="bold|italic"
+                            android:textColor="@color/colorNoir" />
+
+
+                    </LinearLayout>
+
+                    <!--Couplet 2-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/num_couplet2"
+                            android:text=""
+                            android:textSize="18dp"
+                            android:fontFamily="sans-serif"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="bold"/>
+
+                        <View
+                            android:layout_width="6dp"
+                            android:layout_height="2dp"
+                            android:background="@color/colorBlanche"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/couplet2"
+                            android:text=""
+                            android:fontFamily="sans-serif"
+                            android:textSize="@dimen/dim_text"
+                            android:textColor="@color/colorNoir" />
+
+
+                    </LinearLayout>
+
+                    <!--Refrain 2-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/choeur2"
+                        android:visibility="gone"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginLeft="40dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Choeur :"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="sans-serif"
+                            android:textColor="@color/colorNoir"
+                            android:textStyle="italic"
+                            android:textSize="@dimen/dim_text"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/refrain2"
+                            android:text=""
+                            android:fontFamily="sans-serif"
+                            android:textSize="@dimen/dim_text"
+                            android:textStyle="bold|italic"
+                            android:textColor="@color/colorNoir" />
+
+
+                    </LinearLayout>
+
+                    <!--Couplet 3-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/num_couplet3"
+                            android:text=""
+                            android:fontFamily="sans-serif"
+                            android:textSize="18dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="bold"/>
+
+                        <View
+                            android:layout_width="6dp"
+                            android:layout_height="2dp"
+                            android:background="@color/colorBlanche"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/couplet3"
+                            android:text=""
+                            android:fontFamily="sans-serif"
+                            android:textSize="@dimen/dim_text"
+                            android:textColor="@color/colorNoir" />
+
+
+                    </LinearLayout>
+
+                    <!--Refrain 3-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/choeur3"
+                        android:visibility="gone"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginLeft="40dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Choeur :"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="sans-serif"
+                            android:textColor="@color/colorNoir"
+                            android:textStyle="italic"
+                            android:textSize="@dimen/dim_text"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/refrain3"
+                            android:text=""
+                            android:textSize="@dimen/dim_text"
+                            android:fontFamily="sans-serif"
+                            android:textStyle="bold|italic"
+                            android:textColor="@color/colorNoir" />
+
+
+                    </LinearLayout>
+
+                    <!--Couplet 4-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/num_couplet4"
+                            android:text=""
+                            android:textSize="18dp"
+                            android:fontFamily="sans-serif"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="bold"/>
+
+                        <View
+                            android:layout_width="6dp"
+                            android:layout_height="2dp"
+                            android:background="@color/colorBlanche"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/couplet4"
+                            android:fontFamily="sans-serif"
+                            android:text=""
+                            android:textSize="@dimen/dim_text"
+                            android:textColor="@color/colorNoir" />
+
+
+                    </LinearLayout>
+
+                    <!--Refrain 4-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/choeur4"
+                        android:visibility="gone"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginLeft="40dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Choeur :"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="sans-serif"
+                            android:textColor="@color/colorNoir"
+                            android:textStyle="italic"
+                            android:textSize="@dimen/dim_text"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/refrain4"
+                            android:fontFamily="sans-serif"
+                            android:text=""
+                            android:textSize="@dimen/dim_text"
+                            android:textStyle="bold|italic"
+                            android:textColor="@color/colorNoir" />
+
+
+                    </LinearLayout>
+
+                    <!--Couplet 5-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/num_couplet5"
+                            android:text=""
+                            android:fontFamily="sans-serif"
+                            android:textSize="18dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="bold"/>
+
+                        <View
+                            android:layout_width="6dp"
+                            android:layout_height="2dp"
+                            android:background="@color/colorBlanche"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/couplet5"
+                            android:fontFamily="sans-serif"
+                            android:text=""
+                            android:textSize="@dimen/dim_text"
+                            android:textColor="@color/colorNoir" />
+
+
+                    </LinearLayout>
+
+                    <!--Refrain 5-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/choeur5"
+                        android:visibility="gone"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginLeft="40dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Choeur :"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="sans-serif"
+                            android:textColor="@color/colorNoir"
+                            android:textStyle="italic"
+                            android:textSize="@dimen/dim_text"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif"
+                            android:id="@+id/refrain5"
+                            android:text=""
+                            android:textSize="@dimen/dim_text"
+                            android:textStyle="bold|italic"
+                            android:textColor="@color/colorNoir" />
+
+
+                    </LinearLayout>
+
+                    <!--Couplet 6-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/num_couplet6"
+                            android:text=""
+                            android:fontFamily="sans-serif"
+                            android:textSize="18dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="bold"/>
+
+                        <View
+                            android:layout_width="6dp"
+                            android:layout_height="2dp"
+                            android:background="@color/colorBlanche"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/couplet6"
+                            android:text=""
+                            android:fontFamily="sans-serif"
+                            android:textSize="@dimen/dim_text"
+                            android:textColor="@color/colorNoir" />
+
+
+                    </LinearLayout>
+
+                    <!--Refrain 6-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/choeur6"
+                        android:visibility="gone"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginLeft="40dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Choeur :"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="sans-serif"
+                            android:textColor="@color/colorNoir"
+                            android:textStyle="italic"
+                            android:textSize="@dimen/dim_text"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/refrain6"
+                            android:text=""
+                            android:textSize="@dimen/dim_text"
+                            android:fontFamily="sans-serif"
+                            android:textStyle="bold|italic"
+                            android:textColor="@color/colorNoir" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

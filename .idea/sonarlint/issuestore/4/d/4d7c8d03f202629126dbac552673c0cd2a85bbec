@@ -1,0 +1,6 @@
+
+dsquid:UselessImportCheck"4Remove this unused import 'android.widget.TextView'.(„Ë‚ˆÿÿÿÿÿ8‰ŠÚ¶õ-
+isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¾º¯¾8‘óÓò-
+hsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Í¨÷(8ÃðòÓò-
+squid:S1488"\Immediately return this expression instead of assigning it to the temporary variable "root".(éÚ÷¤úÿÿÿÿ8‰ŠÚ¶õ-
+Psquid:S1068"2Remove this unused "toolsViewModel" private field.(¿ÒÙÙ8ÃðòÓò-

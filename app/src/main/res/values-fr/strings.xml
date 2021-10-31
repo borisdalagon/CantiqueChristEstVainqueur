@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Christ est vainqueur</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_change_language">Changer de langue</string>
+    <string name="menu_home">Titre de cantique (fr)</string>
+    <string name="menu_gallery">Numero de cantique (fr)</string>
+    <string name="menu_gallery_2">Numero de cantique (en)</string>
+    <string name="menu_slideshow">Titre de cantique (en)</string>
+    <string name="menu_tools">Informations</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="copyright"><![CDATA[Copyright © 2020,]]></string>
+
+
+    <string name="dialog_titre">Changement de langue</string>
+    <string name="dialog_text">L\'application va redémarer apres avoir choisi une langue </string>
+    <string name="anglais">ANGLAIS </string>
+    <string name="francais">FRANÇAIS </string>
+    <string name="titres_des_cantiques">Titre de cantique (fr)</string>
+    <string name="numeros_des_cantiques">Numero de cantique (fr)</string>
+    <string name="songs_by_title">Titre de cantique (en)</string>
+    <string name="songs_by_number">Numero de cantique (en)</string>
+    <string name="english_songs">Cantiques en Anglais</string>
+    <string name="recueil_de_cantiques">Recueil de cantiques</string>
+    <string name="christ_est_vainqueur">Christ est Vainqueur</string>
+    <string name="Recherche_ici">Recherche ici ...</string>
+    <string name="text_info_paragraphe_1">Christ est vraiment vainqueur sur le monde, la chair, le diable. Nous avons vu sa victoire, nous voyons sa victoire et nous verrons sa victoire dans nos vies, dans notre nation, dans les nations et dans le monde.</string>
+    <string name="text_info_paragraphe_2">C\'est avec toute notre reconnaissance au seigneur que nous offrons au monde entier cette édition de ‹‹CHRIST EST VAINQUEUR ››. Puisse ce recueil de cantiques tenir une harmonieuse compagnie aux messages que Dieu adresse aujourd\'hui à toute l\'humanité au moyen de cette application et puisse l\'Église qui attend le retour glorieux de l\'Epoux chanter : CHRIST EST VAINQUEUR !</string>
+    <string name="cantiques_en_fran_ais">Cantiques en Français</string>
+</resources>

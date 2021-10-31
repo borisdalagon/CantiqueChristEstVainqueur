@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Christ the Victor</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_change_language">Change language</string>
+    <string name="menu_home">Songs by title (fr)</string>
+    <string name="menu_gallery">Songs by number (fr)</string>
+    <string name="menu_gallery_2">Songs by number (en)</string>
+    <string name="menu_slideshow">Songs by title (en)</string>
+    <string name="menu_tools">Information</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="copyright"><![CDATA[Copyright © 2020,]]></string>
+
+
+    <string name="dialog_titre">Language change</string>
+    <string name="dialog_text">The application will restart after choosing a language</string>
+    <string name="anglais">ENGLISH </string>
+    <string name="francais">FRENCH </string>
+    <string name="titres_des_cantiques">Songs by title (fr)</string>
+    <string name="numeros_des_cantiques">Songs by number (fr)</string>
+    <string name="songs_by_title">Songs by title (en)</string>
+    <string name="songs_by_number">Songs by number (en)</string>
+    <string name="english_songs">English Songs</string>
+    <string name="recueil_de_cantiques">Song Book</string>
+    <string name="christ_est_vainqueur">Christ  the Victor</string>
+    <string name="Recherche_ici">Search here ...</string>
+    <string name="text_info_paragraphe_1">Jesus Christ overcome the world, the flesh, and the Devil. We have seen his victory, we see his victory today, and we shall see his victory in our lives, in our nation, in the nations, and throughout the world. It is with much gratitude to the Lord that we offer this edition of CHRIST THE VICTOR to the entire world.</string>
+    <string name="text_info_paragraphe_2">May this Song Book be a harmonious companion to the messages of God to all mankind by means of the printed page, and may the Church that is waiting for the return of her glorious Bridegroom sing CHRIST THE VICTOR !</string>
+    <string name="cantiques_en_fran_ais">French Songs</string>
+</resources>

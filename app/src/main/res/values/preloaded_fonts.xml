@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/alegreya_sans_light</item>
+        <item>@font/alex_brush</item>
+        <item>@font/alike</item>
+        <item>@font/aref_ruqaa</item>
+        <item>@font/bilbo_swash_caps</item>
+        <item>@font/caudex</item>
+        <item>@font/comfortaa</item>
+    </array>
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <item android:title="@string/cantiques_en_fran_ais">
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_home"
+                    android:icon="@drawable/ic_list_cantique"
+                    android:title="@string/titres_des_cantiques" />
+
+                <item
+                    android:id="@+id/nav_numero"
+                    android:icon="@drawable/ic_list_numero"
+                    android:title="@string/numeros_des_cantiques" />
+
+            </group>
+
+        </menu>
+
+    </item>
+
+
+    <item android:title="@string/english_songs" >
+    <menu>
+        <group android:checkableBehavior="single">
+
+            <item
+                android:id="@+id/nav_slideshow"
+                android:icon="@drawable/ic_list_cantique"
+                android:title="@string/songs_by_title" />
+
+
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_list_numero"
+                android:title="@string/songs_by_number" />
+
+
+        </group>
+
+    </menu>
+
+    </item>
+
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_tools"
+            android:icon="@drawable/ic_info_outline_black_24dp"
+            android:title="@string/menu_tools" />
+    </group>
+
+
+</menu>

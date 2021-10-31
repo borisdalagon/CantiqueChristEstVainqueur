@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:gravity="bottom"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="0dp"
+    android:paddingBottom="0dp"
+    android:background="@color/colorPrimary"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/alike"
+            android:text="@string/christ_est_vainqueur"
+            android:textColor="@color/colorBlanche"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/logo_launcher"
+            android:layout_below="@id/t1"
+            android:src="@drawable/guitar" />
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/notemusic" />
+
+
+    </RelativeLayout>
+
+   <RelativeLayout
+       android:layout_width="70dp"
+       android:layout_height="80dp"
+       android:layout_alignParentBottom="true"
+       android:layout_alignParentRight="true"
+       android:background="@drawable/design">
+
+
+       <ImageView
+           android:layout_width="48dp"
+           android:layout_height="48dp"
+           android:padding="0dp"
+         android:layout_alignParentBottom="true"
+           android:layout_alignParentRight="true"
+           android:src="@mipmap/ic_logo_cantique" />
+
+   </RelativeLayout>
+
+</RelativeLayout>
